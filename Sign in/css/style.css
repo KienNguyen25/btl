@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+:root {
+    --color-primary: #006341;
+    --color-secondary-tomato: #c24828;
+    --color-secondary-sky: #d4e9e2;
+    --color-text:#1e3932;
+    --color-p: #212121;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+html,body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    color: #212121;
+    background-color: #fff !important;
+}
+.z-index {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed !important;
+  z-index: 100;
+}
+/* nav */
+nav {
+    box-shadow: 0 1px 0px rgb(0 0 0 / 10%), 0 2px 0px rgb(0 0 0 / 6%), 0 2px 0 rgb(0 0 0 / 7%);
+}
+#nav-wrap {
+    padding: 0 !important;
+}
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+.border-dark {
+    margin-right: 20px;
+} 
+.border {
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 7px 16px;
+}
+.location {
+    align-self: center;
+}
+.d-fl {
+    margin: 20px 0;
+    display: flex;
+    justify-content: right;
+}
+.d-fl a {
+    text-decoration: none;
+    color:  #000;
+    margin-right: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+.d-fl a:hover {
+   color: #000;
+}
+.nav-link,
+.nav-item {
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.nav-item a:hover {
+    color: #006341 !important;
+}
+.navbar-expand-lg {
+  padding: 0 20px !important;
+}
+/*  */
+.heading-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+.content-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.content-wrapper h1 {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 48px 40px;
+}
+/* form */
+.form-input {
+    border: 2px solid #006341;
+    border-radius: 6px;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    transition: 0.25s ease;
+  }
+  .form-input:focus {
+     border-color: #00a862;
+  }
+  .form-field {
+    position: relative;
+  }
+  .form-label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 21px;
+      user-select: none;
+      transition: 0.25s ease;
+  }
+  .error {
+    color: red;
+    padding: 10px 20px;
+  }
+  .error span {
+    padding: 0 10px;
+  }
+  .form-input:not(:placeholder-shown) + .form-label,
+  .form-input:focus + .form-label {
+    top: 0;
+    padding: 2px;
+    display: inline-block;
+    background-color: #fff;
+    color: #006341;
+    left: 11px;
+  }
+  .check-box {
+    display: flex;
+    line-height: 34px;
+    margin-bottom: 30px
+  }
+  .signIn-form {
+    padding: 32px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 550px;
+    border-radius: 10px;
+    margin-bottom: 58px
+  }
+  .form-check-input {
+   padding: 15px;
+  }
+  .form-check label{
+    padding-left:  20px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .details a {
+    font-weight: bold;
+    color: #006341;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .details a:hover {
+    color: #00a862;
+  }
+  .text-a {
+    margin-bottom: 10px;
+  }
+  .text-a a {
+    font-size: 20px;
+    color: #006341;
+    font-weight: bold;
+  }
+  .text-a a:hover {
+    color: #00a862;
+  }
+  .text-a:last-of-type {
+    margin-bottom: 40px;
+  }
+  .btn-signIn {
+    float: right;
+  }
+  .btn-signIn button {
+    padding: 18px 24px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #00754a;
+    color: #fff;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .btn-signIn button:hover {
+    background-color: #00a862;
+  }
+  .cardd {
+    text-align: center;
+    padding: 32px 56px;
+    border-radius: 20px !important;
+    background-color: #edfff9 !important;
+  }
+  .cardd h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00754a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .cardd p {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .cardd p > a {
+    padding: 9px 16px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    color: #00754a;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .cardd p > a:hover {
+    background-color: #00a862;
+    color: #fff;
+  }
+  .cardd p:last-of-type {
+    margin-bottom: 0;
+  }
+  /* bootom */
+  .bootom-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .bootom-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bootom-group p {
+    margin-bottom: 0;
+  }
+  .bootom-group p a {
+    padding: 7px 16px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #00754a;
+    font-weight: bold;
+  }
+  .bootom-group ul {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .bootom-group ul li {
+    list-style: none;
+    padding: 6px 0;
+  }
+  .bootom-group ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  .bootom-bt {
+    margin-bottom: 20px;
+  }
+  /* mb */
+@media screen and (max-width: 767px){
+.content-wrapper h1 {
+    font-size: 19px;
+    padding: 40px 25px;
+}
+.nav-wrap {
+  padding: 0 10px !important;
+}
+
+.signIn-form {
+    padding: 4px;
+    box-shadow: none;
+    margin-bottom: 0;
+    height: 530px;
+}
+.form-check label {
+    padding-left: 9px;
+    line-height: 38px;
+}
+.bootom-group {
+    display: block;
+}
+.bootom-wrapper {
+    padding: 0 16px;
+}
+.bootom-group p {
+    margin-bottom: 16px;
+}
+.bootom-group ul {
+    margin-bottom: 16px;
+}
+#nav-wrap {
+  padding: 0 10px !important;
+}
+.d-fl {
+  display: block !important;
+}
+.location {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #000;
+}
+.location a {
+  padding: 0;
+}
+.d-fl button a {
+    margin:0;
+    padding: 0;
+}
+}
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .bootom-group {
+        display: flex;
+    }
+    #nav-wrap {
+      padding: 0 10px !important;
+  }
+  .d-fl {
+      display: block !important;
+  }
+  .location {
+      margin-bottom: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #000;
+  }
+  .location a {
+      padding: 0;
+  }
+  .d-fl button a {
+        margin:0;
+        padding: 0;
+  }
+}

@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+:root {
+    --color-primary: #006341;
+    --color-secondary-tomato: #c24828;
+    --color-secondary-sky: #d4e9e2;
+    --color-text:#1e3932;
+    --color-p: #212121;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+html,body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    color: #212121;
+    background-color: #fff !important;
+}
+.z-index {
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed !important;
+  z-index: 100;
+}
+/* nav */
+nav {
+    box-shadow: 0 1px 0px rgb(0 0 0 / 10%), 0 2px 0px rgb(0 0 0 / 6%), 0 2px 0 rgb(0 0 0 / 7%);
+}
+#nav-wrap {
+    padding: 0 !important;
+}
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+.border-dark {
+    margin-right: 20px;
+} 
+.border {
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 7px 16px;
+}
+.location {
+    align-self: center;
+}
+.d-fl {
+    margin: 20px 0;
+    display: flex;
+    justify-content: right;
+}
+.d-fl a {
+    text-decoration: none;
+    color:  #000;
+    margin-right: 20px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+.d-fl a:hover {
+   color: #000;
+}
+.nav-link,
+.nav-item {
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.nav-item a:hover {
+    color: #006341 !important;
+}
+.navbar-expand-lg {
+  padding: 0 20px !important;
+}
+/*  */
+.content-heading {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.content-heading > div {
+    text-align: center;
+    margin-bottom: 48px;
+}
+.content-heading h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 48px 0;
+}
+.content-heading h2 {
+    font-size: 14px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-bottom: 16px;
+}
+.content-heading > .text-hd {
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+    padding-bottom: 48px;
+    margin-bottom: 0;
+}
+/* form */
+
+.form-input {
+    border: 2px solid #006341;
+    border-radius: 6px;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    transition: 0.25s ease;
+  }
+  .form-input:focus {
+     border-color: #00a862;
+  }
+  .form-field {
+    position: relative;
+  }
+  .form-label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 21px;
+      user-select: none;
+      transition: 0.25s ease;
+  }
+  .error {
+    color: red;
+    padding: 10px 20px;
+  }
+  .error span {
+    padding: 0 10px;
+  }
+  .form-input:not(:placeholder-shown) + .form-label,
+  .form-input:focus + .form-label {
+    top: 0;
+    padding: 2px;
+    display: inline-block;
+    background-color: #fff;
+    color: #006341;
+    left: 11px;
+  }
+  .signIn-form {
+    padding: 32px;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 900px;
+    border-radius: 10px;
+    margin-bottom: 58px
+  }
+  .signIn-form p {
+    margin-bottom: 20px;
+  }
+  .signIn-form p:first-of-type {
+    margin-bottom: 30px;
+  }
+  .form-check {
+    display: flex !important;
+    margin-bottom: 50px !important;
+  }
+  .form-check-input {
+   padding: 15px;
+  }
+  .form-check label{
+    padding-left:  20px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .details a {
+    font-weight: bold;
+    color: #006341;
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  .details a:hover {
+    color: #00a862;
+  }
+  .text-a {
+    margin-bottom: 10px;
+  }
+  .text-a a {
+    font-size: 20px;
+    color: #006341;
+    font-weight: bold;
+  }
+  .text-a a:hover {
+    color: #00a862;
+  }
+  .text-a:last-of-type {
+    margin-bottom: 40px;
+  }
+  .btn-signIn {
+    float: right;
+  }
+  .btn-signIn button {
+    padding: 18px 24px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #00754a;
+    color: #fff;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .btn-signIn button:hover {
+    background-color: #00a862;
+  }
+  section {
+    padding-bottom: 30px;
+  }
+  section p {
+    padding-left: 20px;
+  }
+  section h2 {
+    color: #000 !important;
+  }
+  /* bootom */
+  .bootom-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .bootom-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  .bootom-group p {
+    margin-bottom: 0;
+  }
+  .bootom-group p a {
+    padding: 7px 16px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #00754a;
+    font-weight: bold;
+  }
+  .bootom-group ul {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .bootom-group ul li {
+    list-style: none;
+    padding: 6px 0;
+  }
+  .bootom-group ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+  }
+  .bootom-bt {
+    margin-bottom: 20px;
+  }
+  .d-fl button a {
+    margin:0;
+    padding: 0;
+}
+  /* tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #nav-wrap {
+        padding: 0 10px !important;
+    }
+    .d-fl {
+        display: block !important;
+    }
+    .location {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #000;
+    }
+    .location a {
+        padding: 0;
+    }
+    .d-fl button a {
+          margin:0;
+          padding: 0;
+    }
+}
+/* mb */
+@media screen and (max-width: 767px){
+.signIn-form {
+    box-shadow: none;
+    padding: 0px;
+}
+.content-heading > div {
+    text-align: left;
+    margin-bottom:20px;
+}
+.content-heading h1 {
+    font-size: 20px;
+    padding: 24px 0;
+    margin-bottom: 0;
+}
+.content-heading div > h2 {
+    display: none;
+}
+.content-heading p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-signIn button {
+    padding: 12px 15px;
+    font-size: 17px;
+}
+.bootom-group,
+.bootom-bt {
+    display: block;
+    padding: 0 12px;
+     margin-bottom: 20px;
+}
+.bootom-group p {
+    margin-bottom: 20px;
+}
+.bootom-group ul li {
+    font-size: 15px;
+    padding: 3px 0;
+}
+hr {
+    margin-top: 0px !important;
+}
+form.signIn-form {
+    margin-bottom: 0;
+}
+#nav-wrap {
+    padding: 0 10px !important;
+}
+.d-fl {
+    display: block !important;
+}
+.location {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #000;
+}
+.location a {
+    padding: 0;
+}
+.d-fl button a {
+      margin:0;
+      padding: 0;
+}
+}
